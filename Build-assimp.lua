@@ -5,6 +5,11 @@ project "assimp"
     objdir (OutDirs["vendorLibDir"])
     targetdir (OutDirs["vendorObjDir"])
 
+    prebuildcommands
+    {
+      "cmake ."
+    }
+
   files 
   {
       "assimp/include/**.h",
